@@ -65,7 +65,7 @@ export default function Home() {
     toast("URL copiada");
   };
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
       <Card className="w-full h-full">
         <CardHeader>
           <CardTitle>
@@ -77,7 +77,7 @@ export default function Home() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <form className="p-4">
+          <form className="md:p-4">
             <Label htmlFor="baseUrl">URL Base</Label>
             <Input
               id="baseUrl"
@@ -136,8 +136,8 @@ export default function Home() {
             )}
           </form>
         </CardContent>
-        <CardFooter className="flex justify-between">
-          <Button onClick={generateParametrizedUrl}>
+        <CardFooter className="flex justify-between w-full">
+          <Button className="w-full md:w-1/3" onClick={generateParametrizedUrl}>
             Gerar URL parametrizada
           </Button>
         </CardFooter>
